@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.Api", "DwHouse.Api\DwHouse.Api.csproj", "{F02D6123-0381-062D-CC1C-F7044ABDB19D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.DataAccess", "DwHouse.DataAccess\DwHouse.DataAccess.csproj", "{80F7CEFF-65A0-F77F-1C2F-38A3A0E4A9BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.Dtos", "DwHouse.Dtos\DwHouse.Dtos.csproj", "{EDBD2429-8FFA-4125-2CE7-C03080C102CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.Identity", "DwHouse.Identity\DwHouse.Identity.csproj", "{C1B936AF-53EC-A945-6E94-1E65FF6C163F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.Logic", "DwHouse.Logic\DwHouse.Logic.csproj", "{845B6DB5-4EDF-BDE8-EC69-19B4F70B1775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.Messaging", "DwHouse.Messaging\DwHouse.Messaging.csproj", "{9DBA2CB7-D849-0E88-CA9A-CA90580DE9A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwHouse.Utilities", "DwHouse.Utilities\DwHouse.Utilities.csproj", "{75E873B2-0D1E-0574-EC81-5488E4CD396E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F02D6123-0381-062D-CC1C-F7044ABDB19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02D6123-0381-062D-CC1C-F7044ABDB19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02D6123-0381-062D-CC1C-F7044ABDB19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02D6123-0381-062D-CC1C-F7044ABDB19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F7CEFF-65A0-F77F-1C2F-38A3A0E4A9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F7CEFF-65A0-F77F-1C2F-38A3A0E4A9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F7CEFF-65A0-F77F-1C2F-38A3A0E4A9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F7CEFF-65A0-F77F-1C2F-38A3A0E4A9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBD2429-8FFA-4125-2CE7-C03080C102CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBD2429-8FFA-4125-2CE7-C03080C102CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBD2429-8FFA-4125-2CE7-C03080C102CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBD2429-8FFA-4125-2CE7-C03080C102CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B936AF-53EC-A945-6E94-1E65FF6C163F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B936AF-53EC-A945-6E94-1E65FF6C163F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B936AF-53EC-A945-6E94-1E65FF6C163F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B936AF-53EC-A945-6E94-1E65FF6C163F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845B6DB5-4EDF-BDE8-EC69-19B4F70B1775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845B6DB5-4EDF-BDE8-EC69-19B4F70B1775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845B6DB5-4EDF-BDE8-EC69-19B4F70B1775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845B6DB5-4EDF-BDE8-EC69-19B4F70B1775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBA2CB7-D849-0E88-CA9A-CA90580DE9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBA2CB7-D849-0E88-CA9A-CA90580DE9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBA2CB7-D849-0E88-CA9A-CA90580DE9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBA2CB7-D849-0E88-CA9A-CA90580DE9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E873B2-0D1E-0574-EC81-5488E4CD396E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E873B2-0D1E-0574-EC81-5488E4CD396E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E873B2-0D1E-0574-EC81-5488E4CD396E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E873B2-0D1E-0574-EC81-5488E4CD396E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {047AFBD3-263D-457D-AA45-DACA7C71B983}
+	EndGlobalSection
+EndGlobal

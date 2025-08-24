@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  
+  <Target Name="CompileTypeScript" />
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.2-pre01" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Reinforced.Typings" Version="1.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DwHouse.DataAccess\DwHouse.DataAccess.csproj" />
+    <ProjectReference Include="..\DwHouse.Dtos\DwHouse.Dtos.csproj" />
+    <ProjectReference Include="..\DwHouse.Identity\DwHouse.Identity.csproj" />
+    <ProjectReference Include="..\DwHouse.Logic\DwHouse.Logic.csproj" />
+    <ProjectReference Include="..\DwHouse.Messaging\DwHouse.Messaging.csproj" />
+    <ProjectReference Include="..\DwHouse.Utilities\DwHouse.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Endpoints\Warehouse\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+@DwHouse.Api = http://localhost:24822/v1.0/store
+
+
+PUT {{DwHouse.Api}}/customers
+Content-Type: application/json
+{
+  "name": "jazz"
+}
+###
+
+PUT {{DwHouse.Api}}/orders
+Content-Type: application/json
+{
+  "customerId": "jazz"
+  "productId": "jazz"
+}
+###
+
+PUT {{DwHouse.Api}}/products
+Content-Type: application/json
+{
+  "name": "plantanas"
+}
