@@ -30,7 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Endpoints\Warehouse\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

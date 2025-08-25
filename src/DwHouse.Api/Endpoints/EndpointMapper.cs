@@ -5,6 +5,7 @@ public static class EndpointMapper
     public static string Customers(string path) => $"/store/customers";
     public static string Orders(string path) => $"/store/orders";
     public static string Products(string path) => $"/store/products";
+    public static string ETL(string path) => $"/warehouse";
 
     public static void Map(WebApplication app)
     {

@@ -9,6 +9,7 @@ public class WarehouseDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlite(ConnectionStrings.Warehouse);
+        optionsBuilder.EnableSensitiveDataLogging();
         base.OnConfiguring(optionsBuilder);
     }
     public DbSet<Fact> Facts { get; set; }
@@ -22,6 +23,8 @@ public class WarehouseDbContext : DbContext
         {
             e.ToTable("Facts");
             e.HasKey(x => x.Id);
+
+            e.OwnsOne(x => x.AuditRecord);
 
             e.HasOne(x => x.Product).WithMany(x => x.Facts)
                 .HasForeignKey(x => x.ProductId);

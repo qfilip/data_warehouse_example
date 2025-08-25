@@ -1,23 +1,29 @@
-@DwHouse.Api = http://localhost:24822/v1.0/store
+@DwHouse.Api = http://localhost:24822/v1.0
+@DwHouse.Api_Store = {{DwHouse.Api}}/store
+@DwHouse.Api_Warehouse = {{DwHouse.Api}}/warehouse
 
-
-PUT {{DwHouse.Api}}/customers
+PUT {{DwHouse.Api_Store}}/customers
 Content-Type: application/json
 {
   "name": "jazz"
 }
 ###
 
-PUT {{DwHouse.Api}}/orders
+PUT {{DwHouse.Api_Store}}/orders
 Content-Type: application/json
 {
-  "customerId": "jazz"
-  "productId": "jazz"
+  "customerId": "54028145-26a7-4d9e-81c5-c0811c6f9354",
+  "productId": "66e4ec7f-d1b4-464d-9ae8-12819a242527",
+  "amount": 2
 }
 ###
 
-PUT {{DwHouse.Api}}/products
+PUT {{DwHouse.Api_Store}}/products
 Content-Type: application/json
 {
   "name": "plantanas"
 }
+
+###
+
+POSt {{DwHouse.Api_Warehouse}}

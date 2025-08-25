@@ -31,23 +31,18 @@ public static class DbContextExtensions
 
         foreach (var entry in entries)
         {
-            var entryKey = entry.Entity as IId<Guid>;
-            var entryAudit = entry.Entity as IAuditedEntity<Audit>;
-
-            if (entryKey == null || entryAudit == null)
-                continue;
-
             if (entry.State == EntityState.Added)
             {
-                entryKey.Id = entryKey.Id == Guid.Empty ? Guid.NewGuid() : entryKey.Id;
+                if(entry.Entity is IId<Guid> keyyed)
+                    keyyed.Id = keyyed.Id == Guid.Empty ? Guid.NewGuid() : keyyed.Id;
 
-                entryAudit.AuditRecord.CreatedAt = now;
-                entryAudit.AuditRecord.ModifiedAt = now;
-
+                if(entry.Entity is IAuditedEntity<ReadOnlyAudit>  readOnlyAudit)
+                    readOnlyAudit.AuditRecord.CreatedAt = now;
             }
-            else if (entry.State == EntityState.Modified)
+            else if (entry.State == EntityState.Modified || entry.State == EntityState.Deleted)
             {
-                entryAudit.AuditRecord.ModifiedAt = now;
+                if (entry.Entity is IAuditedEntity<Audit> audit)
+                    audit.AuditRecord.ModifiedAt = now;
             }
         }
     }
